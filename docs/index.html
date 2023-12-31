@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Currículo</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <h1 class="fw-bold left-slide">Lucas Oliveira</h1> 
+        <h4 class="fw-bold right-slide">Developer Back End</h4>
+        <div class="img-conteiner">
+            <img src="/img/gmail.png" id="gmail" width="30px" height="30px" class="top-slide">
+            <img src="/img/instagram.png" id="instagram" width="30px" height="30px" class="bottom-slide">
+            <img src="/img/twitter.png" id="x" width="30px" height="30px" class="top-slide">
+            <img src="/img/linkedin.png" id="linkedin" width="30px" height="30px" class="bottom-slide">
+            <img src="/img/github.png"  id="github" width="30px" height="30px" class="bottom-slide">
+            <img src="/img/telefone.png" id="telefone" width="30px" height="30px" class="bottom-slide">
+            <img src="/img/pdf.png" id="pdf" width="30px" height="30px" class="bottom-slide">
+        </div>
+        <div class="about-my">
+            <h3 class="fw-bold text-my-slide">Um pouco sobre mim</h3>
+            <p class="text-my-slide">Sou apaixonado pelo mundo do desenvolvimento de Software e Web, uma jornada que iniciei em 2022 e que ganhou ainda mais foco em Desenvolvimento de Software a partir de 2023. Atualmente, atuo como desenvolvedor Full Stack, criando robustas API's RESTful e construindo interfaces dinâmicas utilizando Java e ReactJS. Tenho experiência no desenvolvimento de software utilizando a linguagem Python.</p>
+            <p class="text-my-left-slide">Estou comprometido com minha constante evolução no campo da tecnologia e atualmente estou cursando Ciência da Computação, com previsão de conclusão em dezembro de 2027. Esta jornada acadêmica tem sido uma oportunidade incrível para aprofundar meus conhecimentos e aplicá-los de maneira prática em projetos desafiadores. Estou entusiasticamente buscando minha primeira oportunidade profissional, seja como CLT, PJ ou Freelancer, para aplicar e expandir minhas habilidades no ambiente de trabalho.</p>
+
+        </div>
+        
+        <div class="projetos-my">
+            <h2 class="fw-bold">Projetos</h2>
+            <div class="cards-container">
+                <div class="card-body">
+                    <h5 class="fw-bold mt-1">Hospital-Api</h5>
+                    <p class="fw-bold describre-my">Api feita em Spring Boot, nela você poderia adicionar, editar ou remover um usuário ou funcionário.</p>
+                    <a href="https://github.com/lucascampos04/api-rest-hospital.git">Repositório</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold mt-1">Hospital-ReactJs</h5>
+                    <p class="fw-bold describre-my">Aqui a Api-Hospital está sendo consumida e mostrando os resultados em ReactJS.</p>
+                    <a href="https://github.com/lucascampos04/hospital-react.git">Repositório</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold mt-1">CreateCard-Api</h5>
+                    <p class="fw-bold describre-my">Api que realiza a criação de cartões.</p>
+                    <a href="https://github.com/lucascampos04/api-create-card.git">Repositório</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold mt-1">Cards-React</h5>
+                    <p class="fw-bold describre-my">Aqui a api-createCard está sendo consumida em ReactJS e sendo exibido os resultados.</p>
+                    <a href="https://github.com/lucascampos04/api-create-card.git">Repositório</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold mt-1">Sistema Hospitalar - Software</h5>
+                    <p class="fw-bold describre-my">Nesse software criado em Python você pode registrar, editar e deletar um paciente, funcionario ou consulta.</p>
+                    <a href="https://github.com/lucascampos04/SystemHospital.git">Repositório</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold mt-1">Inventário Logistico - Software</h5>
+                    <p class="fw-bold describre-my">Neste software Python, otimize a logística de seus produtos ou simplifique a organização da sua rotina diária.</p>
+                    <a href="https://github.com/lucascampos04/inventario_logistico.git">Repositório</a>
+                </div>
+                <div class="card-body">
+                    <h5 class="fw-bold mt-1">Sistema de Graduação - Software</h5>
+                    <p class="fw-bold describre-my">Neste software Python, gerencie, edite e exclua eventos relacionados à sua graduação escolar com facilidade.</p>
+                    <a href="https://github.com/lucascampos04/System_graduation.git">Repositório</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+    const git = document.getElementById("github")
+    const telefone = document.getElementById("telefone")
+    const link = document.getElementById("linkedin")
+    const x = document.getElementById("x")
+    const gmail = document.getElementById("gmail")
+    const instagram = document.getElementById("instagram")
+    const pdf = document.getElementById("pdf")
+
+    git.addEventListener("click", (e) => {
+        window.location.href = "https://github.com/lucascampos04"
+    })
+    
+    instagram.addEventListener("click", (e) => {
+        window.location.href = "https://www.instagram.com/lucasoliveira.04_/"
+    })
+    
+
+    link.addEventListener("click", (e) => {
+        window.location.href = "https://www.linkedin.com/in/lucas-oliveira-08334a264/"
+    })
+    
+    x.addEventListener("click", (e) => {
+        window.location.href = "https://twitter.com/lucasoli04"
+    })
+
+    telefone.addEventListener("click", copyTelefone)
+
+    gmail.addEventListener("click", openMail)
+
+    pdf.addEventListener("click", downloadPDF)
+
+    function downloadPDF(){
+        const url = "/Curriculo.pdf"
+        const link = document.createElement("a")
+        link.href = url
+        link.download = 'Curriculo_Lucas_Oliveira.pdf'
+        link.click()
+    }
+
+    function openMail(){
+        const email = "camposdlucasoli@gmail.com"
+        window.location.href = "mailto:"+email
+    }
+
+    function copyTelefone(){
+        const number = "11950735140"
+        const text = document.createElement("textarea")
+        text.value = number
+        document.body.appendChild(text)
+        text.select()
+        document.execCommand("copy")
+        document.body.removeChild(text)
+        alert("Número de telefone copiado : " + number)
+    }
+
+    ScrollReveal().reveal('.left-slide', {
+        origin: 'left',
+        distance: '50px',
+        duration: 800,
+        delay: 200
+    })
+    
+    ScrollReveal().reveal('.right-slide', {
+        origin: 'right',
+        distance: '50px',
+        duration: 800,
+        delay: 200
+    })
+
+    ScrollReveal().reveal('.top-slide', {
+        origin: 'top',
+        distance: '50px',
+        duration: 800,
+        delay: 200
+    })
+    ScrollReveal().reveal('.bottom-slide', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 800,
+        delay: 200
+    })
+
+    ScrollReveal().reveal('.text-my-slide ', {
+        origin: 'bottom',
+        distance: '50px',
+        duration: 800,
+        delay: 200
+    })
+    ScrollReveal().reveal('.text-my-left-slide ', {
+        origin: 'lefts',
+        distance: '50px',
+        duration: 800,
+        delay: 200
+    })
+    ScrollReveal().reveal('.card-body', {
+        duration: 800,
+        delay: 200,
+        easing: 'ease-in-out',
+        origin: 'bottom',
+        distance: '50px',
+        reset: true,
+        interval: 200
+    })
+
+    </script>
+</body>
+</html>
